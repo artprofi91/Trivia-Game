@@ -1,0 +1,343 @@
+/*link font*/
+@font-face { font-family: Dusha ; src: url(../font/Dusha.ttf);}
+}
+body {
+	font-family: Dusha !important;
+}
+/*delete ugly blue border */
+button, 
+button:active, 
+button:focus {
+    outline: none !important;
+}
+
+.navbar {
+	width: 100%;
+	font-family: Dusha !important;
+	border-style: none !important;
+	margin-bottom: 0px !important;
+}
+.navbar-brand {
+	font-family: Dusha !important;
+	color:#A31716 !important;
+	font-size: 25px !important;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #A31716 !important;
+	font-size: 20px;
+}
+
+.navbar-brand>img {
+	height: 250%;
+	padding: 0;
+	width: auto;
+	margin-right: 10px;
+}
+/*locate our brand in center*/
+.brand-centered {
+	background-color: #F6EDCC !important;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0px;
+}
+.brand-centered .navbar-brand {
+	display: flex;
+	align-items: center;
+}
+.navbar-toggle {
+    z-index: 1;
+}
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	margin-right: 15px;
+  	margin-left: 15px;
+}
+
+
+/*left/right not so white*/
+.glyphicon-chevron-left,
+.glyphicon-chevron-right {
+	opacity: 0.5;
+}
+#citiesModal{
+	margin-top: 70px;
+}
+
+/*================ modal rules========*/
+.rules-body {
+	background-color: #F6EDCC ; 
+	color: #A31716 ;
+
+}
+.modal-header,
+.modal-footer {
+	padding-bottom: 0px;
+	padding-top: 0px;
+	background-color: #A31716;
+	color: #F6EDCC ;
+	border-style: none;
+}
+.modal-title {
+	font-size: 30px;
+}
+.btn-lg {
+	background: #A31716;
+}
+
+.rules {
+	color: #A31716;
+	line-height: 20px;
+	font-size: 20px;
+	background-color: #F6EDCC
+}
+/*=========end of modal rules============*/
+
+
+/*styling for navbar brand slide in animation*/
+@-webkit-keyframes bounce {
+
+	0% {
+		-webkit-transform:translateX(-100%);
+		opacity: 0;
+	}
+	50% {
+		-webkit-transform:translateX(15%);
+		opacity: 0.5;
+		padding-right: 50px;
+	}
+	100% {
+		-webkit-transform:translateX(0%);
+		opacity: 1;
+	}
+}
+
+#cities, #rules, #stop, #start, .copyright, .flash {
+	/*cross browser functionality*/
+	-webkit-animation: bounce 800ms ease-in-out;
+	-moz-animation: bounce 800ms ease-in-out;
+	-o-animation: bounce 800ms ease-in-out;
+	animation: bounce 1800ms ease-in-out;
+	
+}
+ol {
+	list-style-type: decimal;
+	margin-left: 20px;
+}
+.circle {
+	list-style-type: circle;
+	margin-left: 20px;
+}
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto;
+	/* Negative indent footer by its height */
+	margin: 0 auto -60px;
+	/* Pad bottom by footer height */
+	padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+	padding-top: 20px;
+	height: 60px !important;
+	background-color: #F6EDCC;
+	color:#A31716;
+	font-family: Dusha;
+	width: 100% !important;
+}
+
+/*video background*/
+#background {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+}
+
+/*hide not cool logo on video*/
+.fifatv {
+	width: 100% !important;
+}
+/*Trivia game holder*/
+.trivia {
+	height: 50px !important;
+	background-color: #F6EDCC !important;
+	border-top: 2px;
+	border-style: solid;
+	border-color: #A31716;
+}
+/*create for trivia game */
+h1 {
+	font-size: 30px !important;
+	font-family: Dusha !important;
+	color: #A31716 !important;
+	margin-top: 10px !important;
+}
+
+/*locate our question area*/
+#questionArea {
+	background-color: #F6EDCC;
+	width: 80%;
+	height: auto;
+
+	/*VERY VERY IMPORTANT TO LOCATE OUR DIV WITH GAME*/
+   	margin-left: 10%;
+   	margin-top: 5%;
+   	margin-bottom: 5%;
+	/*padding-top: 10px;*/
+	padding-bottom: 20px;
+	text-align: center;
+	/*round border for div*/
+	border-radius: 30px;
+	/*we still can see video*/
+	opacity: 0.8;
+	/*cool effect*/
+	box-shadow: 6px 6px 4px #A31716;
+}
+/*begin button*/
+#begin {
+	width: 200px;
+	background-color: #A31716 !important;
+	border-radius: 2px;
+	font-size: 18px !important;
+	font-weight: bold;
+	border-radius: 10px;
+	color: #F6EDCC;
+	font-family: Dusha;
+}
+/*locate our begin button correct*/
+#btnWrapper	{
+	margin-top: 125px;
+}
+
+/*hide our game*/		  
+#gameStart,
+#divAnswers,
+#gameComplete  {
+	display: none;
+	margin-top: 20px;
+}	
+/*locate our timer*/
+.timeRemaining {
+	font-size: 20px;
+	font-family: Dusha;
+	color: #A31716;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+/*our second big*/
+#time {
+	font-size: 30px;
+}
+
+.questions,
+#divAnswers,
+#gameComplete {
+	font-family: Dusha;
+	font-size: 20px;
+	color: #A31716;
+
+}
+/*answers which you can choose*/
+.answers{
+	color: #F6EDCC;
+	font-weight: bold;
+	width: 35%;
+	margin: 10px 20px;
+	cursor: pointer;
+	background-color: #A31716;
+	border-radius: 10px;
+	padding: 7px;
+
+}
+
+/*don't see audio file*/
+audio {
+    display: none;
+}
+
+/*restart button*/
+.restart {
+	width: 200px;
+	background-color: #A31716 !important;
+	border-radius: 2px;
+	font-size: 18px !important;
+	font-weight: bold !important;
+	border-radius: 10px !important;
+	font-family: Dusha;
+	color: #F6EDCC !important;
+}
+
+/*locate answer image*/
+#correctCityImage {
+	height: 200px;
+	width: 200px;
+	opacity: 1;	
+}
+
+#stop {
+	display: none;
+}
+
+
+/*create fireworks*/
+.ball{
+	width:15px;
+	height:15px;
+	border-radius:100%;
+	position:absolute;
+	background:#A31716;
+	display: none;
+}
+
+/*very important for no relocation of footer!!!!*/
+#fire {
+	position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

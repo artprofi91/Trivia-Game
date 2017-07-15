@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FIFA 2018 Trivia Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Add favicon-->
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+  <!-- add link css -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <video autoplay loop muted  id="background">
+    <source src="assets/video/1.mp4" type="video/mp4">
+  </video>
+  <audio loop id="music" src="assets/music/song.mp3"></audio>
+
+
+ <!-- Wrap all page content here -->
+  <div id="wrap">
+
+  <!-- add navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- create how our navbar will be look in responsive -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toButton">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div> <!-- end of navbar-header -->
+      <!-- locate our brand and text in the center of navbar -->
+      <div class="brand-centered">
+        <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png" alt="Dispute Bills">RUSSIA FIFA WORLD CUP 2018</a>
+      </div>  <!-- end of brand centred  -->
+
+
+      <!-- all in this div go to cool button in responsive -->
+      <div id="toButton" class="navbar-collapse collapse">
+        <!-- Locate Host cities and rules on the left -->
+        <ul class="nav navbar-nav navbar-left">
+          <li><a  href="#" id="cities">Host cities</a>
+            <div id="citiesModal" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div id="carousel-city-generic" data-interval="false" class="carousel slide" data-ride="carousel">
+                    <!-- create indicators on the bottom of carousel -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-city-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="2"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="3"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="4"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="5"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="6"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="7"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="8"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="9"></li>
+                      <li data-target="#carousel-city-generic" data-slide-to="10"></li>
+                    </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+
+                  <div class="item active">
+                    <img class="img-responsive img-rounded" src="assets/images/moscow.jpg" alt="Moscow">            
+                  </div> <!-- end of 1 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/saint.jpg" alt="Peterburg">            
+                  </div> <!-- end of 2 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/samara.jpg" alt="Samara">            
+                  </div> <!-- end of 3 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/ekaterinburg.jpg" alt="Ekaterinburg">
+                  </div> <!-- end of 4 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/kaliningrad.jpg" alt="Kaliningrad">
+                  </div> <!-- end of 5 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/kazan.jpg" alt="Kazan">            
+                  </div> <!-- end of 6 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/volgograd.jpg" alt="Volgograd">            
+                  </div> <!-- end of 7 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/novgorod.jpg" alt="Novgorod">            
+                  </div> <!-- end of 8 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/rostov.jpg" alt="Rostov">            
+                  </div> <!-- end of 9 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/saransk.jpg" alt="Saransk">            
+                  </div> <!-- end of 10 image -->
+                  <div class="item">
+                    <img class="img-responsive" src="assets/images/sochi.jpg" alt="Sochi">            
+                  </div> <!-- end of 11 image -->
+                  </div> <!-- end of carousel-inner -->
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-city-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-city-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                  </div> <!-- end of carousel-example-generic" -->
+                </div> <!-- end of modal content -->
+              </div> <!-- end of modal dialog -->
+            </div> <!-- end of citiesmodal -->
+          </li> <!-- end of host cities -->
+
+          <li><a href="#" id="rules">Rules</a>
+            <!-- How to play Modal -->
+            <div id="rulesModal" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title rules-title text-center">Rules: How to play</h4>
+                  </div>
+                  <div class="modal-body rules-body">
+                    <div class="rules">
+                      <ol>
+                        <li>Trivia game shows only one question until the player answers it or their time runs out.</li>
+                        <li>If the player selects the correct answer, show a screen congratulating them for choosing the right option. After a few seconds, display the next question -- do this without user input</li>
+                        <li>The scenario is similar for wrong answers and time-outs.</li>
+                        <ul class="circle">
+                          <li>If the player runs out of time, tell the player that time's up and display the correct answer. Wait a few seconds, then show the next question.</li>
+                          <li>If the player chooses the wrong answer, tell the player they selected the wrong option and then display the correct answer. Wait a few seconds, then show the next question.</li>
+                        </ul>
+                        <li>On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).</li>
+                      </ol>
+                    </div> <!-- end of help div -->
+                  </div> <!-- end of modal body -->
+                  <div class="modal-footer">
+                    <div class="modal-btn-group">
+                      <button type="button" data-dismiss="modal" class="btn btn-lg Close">Close</button>
+                    </div>
+                  </div> <!-- end of modal footer -->
+                </div> <!-- end of modal content -->
+              </div> <!-- end of modal dialog -->
+            </div> <!-- end of help modal -->
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="stop"><span class="glyphicon glyphicon-volume-up"></span></a></li>
+        </ul>
+      </div> <!-- nav-collapse -->
+    </div> <!-- container-fluid -->
+  </nav> <!-- end of navbar -->
+
+  <!-- Begin page content -->
+  <div class="container fifatv">
+    <div class="row trivia">
+      <h1 class="text-center flash"> TRIVIA GAME</h1>
+    </div> <!-- end of row with trivia game-->
+
+    <div class="row">
+      <div id="questionArea" class="col-sm-8 col-xs-8">
+        <div class="col-md-4 col-lg-4">
+          <img class="img-responsive zabivaka"  src="assets/images/zabivaka.png">
+        </div> <!-- end of div with zabivaka -->
+
+        <div class="col-md-8 col-lg-8">
+          <h1>What do you know about Russia’s World Cup 2018 host cities?</h1>
+          <p id="btnWrapper"><button class="text-center btn btn-default" id="begin">Begin game</button></p>
+        <div id="gameStart">  
+          <p class="timeRemaining">Time remaining: <span id="time">25</span></p>
+          <p class="questions"></p>
+          <button class="answers answer1"></button>
+          <button class="answers answer2"></button>
+          <button class="answers answer3"></button> 
+          <button class="answers answer4"></button> 
+        </div><!--  end of gamestart div -->
+        <div id="divAnswers">
+          <p class="timeRemaining">Time remaining: <span id="elapsedTime"></span></p>
+          <p id="wrongMsg">Thats a wrong answer!</p>
+          <p id="correctMsg">Correct!</p>
+          <p id="outOfTime">Time Up!</p>
+          <p id="pCorrectAnswer">The correct answer is: <span></span></p>
+          <p id="pic"></p>
+        </div> <!-- end of divAnswers -->
+        <div id="gameComplete">
+          <p>Game over! Here's your score:</p>
+          <p id="gameOverCorrect">Correct answers: <span></span></p>
+          <p id="gameOverIncorrect">Wrong answers: <span></span></p>
+          <!-- need if time is over and you don't click on answer -->
+          <p id="unanswered">Unanswered questions: <span></span></p>
+          <div id="restartPlaceholder"><button class="text-center btn btn-default restart">Restart</button></div>
+        </div> <!-- end of gamecomplete -->
+        </div> <!-- end of col-md-8 -->
+      </div> <!-- end of question area -->
+    </div> <!-- end of row with game -->
+  <div id="fire"></div>
+  </div> <!-- end of container fifatv -->
+  </div><!-- Wrap Div end -->
+  <div id="footer">
+    <div class="container">
+      <p class="text-center copyright">@ Copyright 2017 Artem Tregubchak</p>
+    </div>
+  </div>
+<!-- add link js -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
